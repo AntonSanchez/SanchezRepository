@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        p {font-family: 'Roboto', sans-serif;}
+        .Box {width: 1587px; height: 100px;background-color: rgb(6, 9, 151); margin-left: -10px;}
+        .Head {color: white; padding: 30px; font-family: 'Roboto', sans-serif;}
+        .Follow {margin-left: 1130px;}
+        .Other {margin-left: 20px;}
+        .Yellow {color: yellow; font-size: 30px;}
+        .Yellow2 {color: yellow;}
+        .White {font-size: 30px;}
+        .Home {margin-left: 650px;}
+        .Others {margin-left: 50px;}
+        .Main {color: rgb(0, 2, 116);font-size: 50px; width: 500px; margin-top: -650px; margin-left: 70px; position: absolute;}
+        .Phrase1 {margin-top: -530px; width: 500px; margin-left: 70px; position: absolute;}
+        .Start {color: white; font-size: 15px; padding: 20px; background-color: black; position: absolute; margin-top: -490px;}
+        .Learn {color: White; font-size: 15px; padding: 20px; background-color: rgb(0, 2, 116); margin-left: 200px; position: absolute; margin-top: -490px;}
+        .Button {margin-top: 50px; margin-left: 70px;}
+        .MidBor {background-color: rgb(255, 255, 255); width: 1350px; height: 300px; margin-left: 100px; margin-top: -150px; box-shadow: 0 4px 4px rgba(0,0,0,0.1); position: absolute;}
+        .Yellow3 {color: yellow; margin-left: 50px; margin-top: -125px;}
+        .Par1 {margin-left: 50px; width: 300px;}
+        .Yellow4 {color: yellow; margin-left: 530px; margin-top: -125px;}
+        .Par2 {margin-left: 530px; width: 300px;}
+        .Yellow5 {color: yellow; margin-left: 1000px; margin-top: -125px;}
+        .Par3 {margin-left: 1000px; width: 300px;}
+        .bg-img {background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center center;
+        height: 1000px; width: 1585px; margin-left: -8px; position: relative; z-index: -2;}
+        .Blur {position: absolute; top: 0; left: 0; z-index: -1; background-color: rgba(201, 212, 218, 0.698); width: 1585px; height: 1000px; backdrop-filter: Blur(8px);}
+        .MainPic {image: url('https://lh3.googleusercontent.com/a/ACg8ocKcLFKWPoPP6J9Zjo6nb4r90ZD_WAFsNJO17BUUa9OiHILxYCo=s288-c-no'); width: 450px; height: 450px; z-index: 1; margin-left: 1000px; margin-top: 250px; border-radius: 50%; box-shadow: 0 4px 4px rgba(0,0,0,0.1);}
+        .Bottom {margin-left: 160px; margin-top: 300px; width: 600px; font-size: 30px;}
+        .BotPar {margin-left: 160px; width: 600px; font-size: 13px;}
+        .BotPar2 {margin-left: 160px; width: 600px; font-size: 13px;}
+        .BotPar3 {margin-left: 160px; width: 600px; font-size: 13px;}
+        .BlueBox {background-image: url('https://images.unsplash.com/photo-1537511446984-935f663eb1f4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center center; width: 350px; height: 250px; margin-left: 30px; margin-top: 30px; box-shadow: 0 4px 4px rgba(0,0,0,0.1);}
+        .BlueBox2 {background-image: url('https://images.unsplash.com/photo-1688828792704-4218151b5d97?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center center; width: 350px; height: 250px; margin-left: 500px; margin-top: -215px; box-shadow: 0 4px 4px rgba(0,0,0,0.1);}
+        .BlueBox3 {background-image: url('https://plus.unsplash.com/premium_photo-1661508626361-8142ceb67a4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center center; width: 350px; height: 250px; margin-left: 975px; margin-top: -215px; box-shadow: 0 4px 4px rgba(0,0,0,0.1);}
+        .LastPic {background-image: url('https://images.unsplash.com/photo-1738750908048-14200459c3c9?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); width: 500px; height: 550px; z-index: 1; margin-left: 1040px; background-repeat: no-repeat; margin-top: -550px;}
+        .Blur2 {background-color: rgba(2, 21, 185, 0.698); width: 350px; height: 250px;}
+        .Blur3 {background-color: rgba(2, 21, 185, 0.698); width: 350px; height: 250px;}
+        .Blur4 {background-color: rgba(2, 21, 185, 0.698); width: 350px; height: 250px;}
+    </style> 
+</head>
+<body>
+    <p> ✆ +63487429836 ✉️ info@zcube.com <span class="Follow"> Follow Us </span><span class="Other"> 𝐟 </span><span class="Other"> G+ </span></p>
+    <div class="Box">
+        <p class="Head">
+            <span class="Yellow"><b>BE</b></span><span class="White"><b>ADVICES</b></span> <span class="Home"> HOME </span> <span class="Others"> ABOUT </span> <span class="Others"> SERVICES </span> <span class="Others"> PORFOLIO </span> <span class="Others"> NEWS </span> <span class="Others"> CONTACT </span>
+        </p>
+    </div>
+    <div class="bg-img">
+        <div class="Blur"></div>
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocKcLFKWPoPP6J9Zjo6nb4r90ZD_WAFsNJO17BUUa9OiHILxYCo=s288-c-no" class="MainPic">
+    </div>
+    <p class="Main"><b> THE </b><span class="Yellow2"><b>EXPERT</b></span><b> GROW FINANCIAL ADVICE </b></p>
+    <p class="Phrase1"> Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet.</p>
+    <p class="Button"><span class="Start">GET STARTED NOW</span> <span class="Learn">LEARN MORE</span></p>
+    <div class="MidBor">
+        <div class="BlueBox"><div class="Blur2"></div></div>
+        <p class="Yellow3"> We Innovate </p>
+        <p class="Par1"> We believe that specialization is the key element to the success.</p>
+        <div class="BlueBox2"><div class="Blur3"></div></div>
+        <p class="Yellow4"> Performance </p>
+        <p class="Par2"> We believe that specialization is the key element to the success.</p>
+        <div class="BlueBox3"><div class="Blur4"></div></div>
+        <p class="Yellow5"> A Full Service </p>
+        <p class="Par3"> We believe that specialization is the key element to the success.</p>
+    </div>
+    <p class="Bottom"><b>We have 15 years experiens & We provied best solution for grow your bussines</b></p>
+    <p class="BotPar"> Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet. Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet. Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet. Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet.</p>
+    <p class="BotPar2"> Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet. Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet. Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet. Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis.</p>
+    <p class="BotPar3"> Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet. Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis.  ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et salpen donec ac nec. Nam vel eu amet.</p>
+    <div class="LastPic"></div>
+</body>
+</html>
